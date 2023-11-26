@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end; /* 우측 정렬을 위한 스타일 */
+  align-items: flex-start; /* 상단 정렬을 위한 스타일 */
+}
+
+.notification-icon {
+  position: relative;
+  margin: 10px; /* 알람 아이콘과 페이지 가장자리 간 여백 */
+}
+
+.unread-indicator {
+  position: absolute;
+  top: -5px; /* 안읽음 표시 상단 여백 */
+  right: -5px; /* 안읽음 표시 우측 여백 */
+  width: 15px;
+  height: 15px;
+  background-color: #f1c40f; /* 노란색 동그라미 배경색 */
+  border-radius: 50%;
+  display: block;
+}
+
+/* 나머지 스타일들은 이전과 동일하게 유지 */
+.notification-icon i {
+  width: 40px;
+  height: 40px;
+  background-color: #3498db; /* 알람 아이콘 배경색 */
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* 아이콘 색상 */
+}
