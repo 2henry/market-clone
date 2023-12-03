@@ -4,6 +4,7 @@ const checkPassword = () => {
   const formData = new FormData(form);
   const password1 = formData.get("password");
   const password2 = formData.get("password2");
+
   if (password1 === password2) {
     return true;
   } else return false;
